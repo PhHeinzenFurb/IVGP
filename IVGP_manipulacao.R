@@ -36,7 +36,8 @@ IVGP$`MoM_IVGP_mes(%)` <- (IVGP$`mes_(%)` - lead(IVGP$`mes_(%)`))/lead(IVGP$`mes
 # variacao YoY para os valores anuais de IVGp
 IVGP$`YoY_IVPG_ano(%)` <- (IVGP$`ano_(%)` - lead(IVGP$`ano_(%)`, n = 12)) / lead(IVGP$`ano_(%)`, n = 12)
 
-
+# passando o arquivo para csv
+write.csv(IVGP, file = "IVGP_formatado.csv")
 
 
 
